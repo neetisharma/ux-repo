@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+}
+
+
+
 body {
     background-color: #ffffff;
     font-family: 'Lato', sans-serif;
@@ -66,16 +80,16 @@ body {
     text-decoration: none; /* No underlining */
   }
   
-  a:visited { /* visited link */
+  nav > ul > li > a:visited { /* visited link */
     color: #ff7f50;
   }
 
-  a:hover {
+  nav > ul > li > a:hover {
     color: #cc6540;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
-  a:active { /* selected link */
+  nav > ul > li > a:active { /* selected link */
     color: #994c30;
   }
 
@@ -86,3 +100,51 @@ a:focus {
 }
 
 
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#workSection .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#heroSection {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#heroSection h1 {
+  text-align: center; /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
