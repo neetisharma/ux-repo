@@ -5,99 +5,101 @@
 header {
   background-color: #ffe4c4;
   padding: 10px 0;
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.75);
   position: relative;
 }
 
-
-
 body {
-    background-color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #4a4a4a;
-  }
-  
-  h1, h2, h3, h4 {
-    line-height: 1.4;
-  }
-  h1 {
-    font-size: 2.65em;
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: 2.15em;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 1.65em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1.25em;
-    font-weight: 400;
-  }
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
 
-  img {
-    width: 100%;
-  }
-  
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.65em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.15em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.65em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #ff7f50;
-    color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #994c30; /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
 
-  .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-  }
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
 
-  .button.contact {
-    background-color: transparent;
-    color: #ff7f50;
-    text-transform: uppercase;
-    border: 2px solid #ff7f50;
-  }
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
 
-  .button.contact:hover {
-    background-color: #ff7f50;
-    color: #ffffff;
-  }
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
 
-  a {
-    color: #ff7f50;
-    text-decoration: none; /* No underlining */
-  }
-  
-  nav > ul > li > a:visited { /* visited link */
-    color: #ff7f50;
-  }
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
 
-  nav > ul > li > a:hover {
-    color: #cc6540;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
+nav > ul > li > a:visited { /* visited link */
+  color: #ff7f50;
+}
 
-  nav > ul > li > a:active { /* selected link */
-    color: #994c30;
-  }
+nav > ul > li > a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+nav > ul > li > a:active { /* selected link */
+  color: #994c30;
+}
 
 a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
-
 
 /* Layout styling */
 .container {
@@ -149,11 +151,12 @@ nav > ul > li > a {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -166,9 +169,9 @@ nav > ul > li > a {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
@@ -180,8 +183,8 @@ nav > ul > li > a {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
 .cloud-front {
@@ -193,22 +196,22 @@ nav > ul > li > a {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: unset;
     padding: 20px 0 13px;
-    min-width: 641px
+    min-width: 641px;
   }
 
   main {
@@ -224,24 +227,24 @@ Medium devices (640px and larger)
   nav > ul {
     margin: 1em 0;
   }
-  
-  .navtoggle.responsive li  {
+
+  .navtoggle.responsive li {
     display: block;
   }
 
   .navtoggle.responsive nav {
     padding: 24px 0 0;
   }
-  .navtoggle.responsive li  {
+
+  .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255,127,80,0.5);
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
   }
-  
-  .navtoggle.responsive li:last-child  {
+
+  .navtoggle.responsive li:last-child {
     padding: 0 0 10px;
   }
-  
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -250,7 +253,6 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-  
 
   nav > ul > li {
     display: inline-block;
@@ -266,7 +268,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px
+    padding: 10px;
   }
 
   .row::after {
@@ -274,14 +276,12 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .container {
     max-width: 1200px;
     margin-left: auto;
